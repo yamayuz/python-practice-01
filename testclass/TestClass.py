@@ -1,5 +1,3 @@
-from testclass.secretary import *
-
 
 class UserInfo:
     def __init__(self, name, birth, address):
@@ -26,14 +24,4 @@ class TestPrivate:
         self.__method2()
 
 
-class Manager:
-    def __init__(self):
-        self.sara = Secretary()
 
-    def work_a(self):
-        self.sara.write_log('hello')
-        time.sleep(5)
-        self.sara.write_log('hey')
-
-    def work_b(self):
-        print(self.sara.get_log())
