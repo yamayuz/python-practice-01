@@ -8,3 +8,6 @@ def adder(x: int):
 
 # ラムダ関数
 my_print = lambda x : print('my_print : {}'.format(x))
+
+
+
