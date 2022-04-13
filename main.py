@@ -1,15 +1,17 @@
 from testclass.TestClass import *
 from testclass.manager import *
 from testclass.client import *
+from testclass.calc import *
 
 
-def fun1(fun, test):
-    fun(test)
+def add(a, b):
+    return a + b
 
 
-def fun2(text):
-    print('fun2:' + text)
+def decrease(a, b):
+    return a - b
 
 
 if __name__ == "__main__":
-    fun1(fun2, 'hello')
+    calc = Calc([("plus", add), ("minus", decrease)])
+    calc.run()
