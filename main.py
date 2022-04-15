@@ -1,10 +1,12 @@
 from testclass.TestClass import *
+from testclass.customer import Customer
 from testclass.manager import *
 from testclass.client import *
 from testclass.calc import *
 from testclass.function import *
 import random, functools
 from testclass.myclass import *
+from testclass.customer import *
 
 
 # def add(a: int, b: int) -> int:
@@ -15,9 +17,9 @@ from testclass.myclass import *
 
 
 if __name__ == "__main__":
-    MyClass2.print_hello()
-
-    MyClass3.print_a()
+    c = Customer('taro', 25)
+    c.print_info()
+    print(c)
 
 
     # calcを使用
