@@ -4,6 +4,7 @@ from testclass.client import *
 from testclass.calc import *
 from testclass.function import *
 import random, functools
+from testclass.myclass import *
 
 
 # def add(a: int, b: int) -> int:
@@ -14,8 +15,17 @@ import random, functools
 
 
 if __name__ == "__main__":
-    list_ = [x*2 for x in range(10) if x % 2 == 0]
-    print(list_)
+    mycls_a = MyClass()
+    mycls_b = MyClass()
+
+    mycls_a.print_ab()
+    mycls_b.print_ab()
+
+    mycls_a.set_ab('AA', 'BB')
+
+    mycls_a.print_ab()
+    mycls_b.print_ab()
+
 
     # calcを使用
     # calc = Calc([("plus", add), ("minus", decrease)])
