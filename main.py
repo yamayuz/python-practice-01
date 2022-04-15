@@ -17,6 +17,8 @@ from testclass.myclass import *
 if __name__ == "__main__":
     MyClass2.print_hello()
 
+    MyClass3.print_a()
+
 
     # calcを使用
     # calc = Calc([("plus", add), ("minus", decrease)])

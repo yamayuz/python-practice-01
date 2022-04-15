@@ -23,3 +23,12 @@ class MyClass2:
         print(cls.a)
         print(type(cls))
 
+
+# スタティックメソッドの例
+class MyClass3:
+    a = 'A'
+
+    @staticmethod
+    def print_a():
+        print(MyClass3.a)
+
