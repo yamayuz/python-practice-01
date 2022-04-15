@@ -15,16 +15,8 @@ from testclass.myclass import *
 
 
 if __name__ == "__main__":
-    mycls_a = MyClass()
-    mycls_b = MyClass()
-
-    mycls_a.print_ab()
-    mycls_b.print_ab()
-
-    mycls_a.set_ab('AA', 'BB')
-
-    mycls_a.print_ab()
-    mycls_b.print_ab()
+    taro_calc = Calc2(0.95)
+    print(taro_calc.get_price(10000))
 
 
     # calcを使用
