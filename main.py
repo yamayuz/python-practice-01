@@ -15,8 +15,7 @@ from testclass.myclass import *
 
 
 if __name__ == "__main__":
-    taro_calc = Calc2(0.95)
-    print(taro_calc.get_price(10000))
+    MyClass2.print_hello()
 
 
     # calcを使用
