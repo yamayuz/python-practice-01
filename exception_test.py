@@ -1,10 +1,8 @@
+from myerror_class.myerror import *
+
 
 try:
-    # f = open('helloworld.txt', 'r')
-    5 / 0
-
-except OSError:
-    print('os error')
-
-except Exception:
-    print('exception')
+    raise MyError('my error happens')
+except MyError as e:
+    print(type(e))
+    print(e)
